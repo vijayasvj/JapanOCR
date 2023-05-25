@@ -3,7 +3,7 @@ import streamlit as st  #Web App
 from PIL import Image #Image Processing
 import numpy as np #Image Processing 
 
-logo = Image.open(r"C:\Users\vjase\OneDrive\Documents\VJp\OCRNEW\image-to-text-python-app\logo-1.png")
+logo = Image.open(r"logo-1.png")
 st.image(logo)
 #title
 st.title("Easy OCR - Extract Text from Images")
