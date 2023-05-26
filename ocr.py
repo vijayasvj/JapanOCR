@@ -6,7 +6,7 @@ import numpy as np #Image Processing
 logo = Image.open(r"logo-1.png")
 st.image(logo)
 #title
-st.title("Easy OCR - Extract Text from Images")
+st.title("Basic Japanese OCR - Extract Text from Images")
 
 #subtitle
 st.markdown("## Optical Character Recognition - Using `streamlit`")
