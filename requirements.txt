@@ -2,3 +2,4 @@ easyocr
 streamlit
 Pillow
 numpy
+opencv-python
