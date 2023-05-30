@@ -2,5 +2,4 @@ easyocr
 streamlit
 Pillow
 numpy
-libgl1-mesa-glx
-opencv-python==4.7.0.72
+cv2
