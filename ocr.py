@@ -2,6 +2,8 @@ import easyocr as ocr  #OCR
 import streamlit as st  #Web App
 from PIL import Image #Image Processing
 import numpy as np #Image Processing 
+import cv2
+
 
 logo = Image.open(r"logo-1.png")
 st.image(logo)
