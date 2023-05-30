@@ -38,7 +38,6 @@ def find_background_lines(image):
         if calculate_line_length(line) > 0:
             x1, y1, x2, y2 = line[0]
             cv2.line(line_image, (x1, y1), (x2, y2), (255,255,255), 2)
-            print(calculate_line_length(line))
 
     return line_image
 
