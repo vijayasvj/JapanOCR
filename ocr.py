@@ -25,8 +25,6 @@ def find_background_lines(image):
     # Convert the image to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     gray = np.where(gray > 190 , 255, 0).astype(np.uint8)
-    cv2.imshow("gray", gray) 
-    cv2.waitKey(0)
 
     # Apply Canny edge detection
     edges = cv2.Canny(gray, threshold1=50, threshold2=150, apertureSize=3)
@@ -41,8 +39,6 @@ def find_background_lines(image):
             x1, y1, x2, y2 = line[0]
             cv2.line(line_image, (x1, y1), (x2, y2), (255,255,255), 2)
             print(calculate_line_length(line))
-            cv2.imshow("length", line_image)
-            cv2.waitKey(0)
 
     return line_image
 
