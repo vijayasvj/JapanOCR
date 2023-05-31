@@ -9,7 +9,7 @@ st.image(logo)
 st.title("Basic Japanese OCR - Extract Text from Images")
 
 #subtitle
-st.markdown("## Optical Character Recognition - Using `streamlit`")
+st.markdown("## Optical Character Recognition - Using `AI`")
 
 st.markdown("")
 
