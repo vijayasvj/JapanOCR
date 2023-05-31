@@ -56,7 +56,7 @@ if image is not None:
 
     with st.spinner("🤖 AI is at Work! "):
         
-        input_image = find_background_lines(np.array(input_image))
+        #input_image = find_background_lines(np.array(input_image))
         result = reader.readtext(np.array(input_image))
 
         result_text = [] #empty list for results
