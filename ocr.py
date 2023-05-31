@@ -3,7 +3,6 @@ import streamlit as st  #Web App
 from PIL import Image #Image Processing
 import numpy as np #Image Processing 
 
-
 logo = Image.open(r"logo-1.png")
 st.image(logo)
 #title
@@ -16,8 +15,10 @@ st.markdown("")
 
 #image uploader
 image = st.file_uploader(label = "Upload your image here",type=['png','jpg','jpeg'])
+
+
 def load_model(): 
-    reader = ocr.Reader(['ja'],model_storage_directory='.')
+    reader = ocr.Reader(['ch_sim'],model_storage_directory='.')
     return reader 
 
 reader = load_model() #load model
@@ -28,8 +29,10 @@ if image is not None:
     st.image(input_image) #display image
 
     with st.spinner("🤖 AI is at Work! "):
-        result = reader.readtext(np.array(input_image))
         
+
+        result = reader.readtext(np.array(input_image))
+
         result_text = [] #empty list for results
 
 
@@ -43,7 +46,6 @@ else:
     st.write("Upload an Image")
 
 st.caption("Made with ❤️ by innovative minds of AnywareLabs")
-
 
 
 
